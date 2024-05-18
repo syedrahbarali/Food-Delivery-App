@@ -87,18 +87,12 @@ exports.login = async (req, res) => {
     loggedInUser.password = null;
     loggedInUser.refreshToken = null;
 
-    res
-      .status(200)
-      .cookie("accessToken", accessToken, {
-        httpOnly: true,
-        secure: true,
-      })
-      .json({
-        success: true,
-        accessToken: accessToken,
-        user: loggedInUser,
-        message: "Logged In Success",
-      });
+    res.status(200).cookie("accessToken", accessToken).json({
+      success: true,
+      accessToken: accessToken,
+      user: loggedInUser,
+      message: "Logged In Success",
+    });
   } catch (error) {
     console.log("Something went wrong", error);
     res.status(400).json({
