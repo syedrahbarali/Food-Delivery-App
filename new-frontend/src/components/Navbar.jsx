@@ -4,7 +4,7 @@ import { LuMenu } from "react-icons/lu";
 import { IoClose } from "react-icons/io5";
 import { useDispatch, useSelector } from "react-redux";
 import { loginStatusActions } from "../store/slices/loginStatus.slice";
-import toast from "react-hot-toast";
+import { toast } from "react-hot-toast";
 
 function Navbar() {
   const navigate = useNavigate();
@@ -14,14 +14,11 @@ function Navbar() {
 
   const handleLogout = async () => {
     try {
+      console.log("Logout clicked");
       const response = await fetch(
         "https://voting-app-vrbt.onrender.com/api/v1/user/logout",
         {
           method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({}),
         }
       );
       console.log(response);
@@ -35,8 +32,8 @@ function Navbar() {
       toast.success("Logout Successful");
       navigate("/log-in");
     } catch (error) {
-      console.log(error);
       toast.error("Logout Failed");
+      console.log(error.message);
     }
   };
 
