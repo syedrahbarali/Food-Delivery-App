@@ -19,9 +19,13 @@ function Navbar() {
         "https://voting-app-vrbt.onrender.com/api/v1/user/logout",
         {
           method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: {},
         }
       );
-      console.log(response);
+      console.log(await response.json());
 
       if (!response.ok) {
         toast.error("Logout Failed");
@@ -110,7 +114,7 @@ function Navbar() {
 
         <div className="flex gap-4 py-6 justify-center">
           <button
-            onClick={() => navigate("/log-in")}
+            onClick={() => (loginStatus ? handleLogout() : navigate("/log-in"))}
             className="border text-white bg-red-600 px-4 py-2 rounded-xl hover:bg-red-700 transition-[background-color]"
           >
             {loginStatus ? "Logout" : "Log in"}
