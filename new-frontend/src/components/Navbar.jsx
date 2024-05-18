@@ -14,7 +14,6 @@ function Navbar() {
 
   const handleLogout = async () => {
     try {
-      console.log("Logout clicked");
       const response = await fetch(
         "https://voting-app-vrbt.onrender.com/api/v1/user/logout",
         {
