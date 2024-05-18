@@ -22,7 +22,6 @@ function Navbar() {
           headers: {
             "Content-Type": "application/json",
           },
-          credentials: "include",
         }
       );
       console.log(await response.json());
