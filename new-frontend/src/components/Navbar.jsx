@@ -22,7 +22,7 @@ function Navbar() {
           headers: {
             "Content-Type": "application/json",
           },
-          // body: JSON.stringify({}),
+          credentials: "include",
         }
       );
       console.log(await response.json());
