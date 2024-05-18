@@ -26,11 +26,14 @@ function Navbar() {
       );
       console.log(response);
 
-      if (response.status === 200) {
-        dispatch(loginStatusActions.setLoginStatus());
-        toast.success("Logout Successful");
-        navigate("/log-in");
+      if (!response.ok) {
+        toast.error("Logout Failed");
+        return;
       }
+
+      dispatch(loginStatusActions.setLoginStatus());
+      toast.success("Logout Successful");
+      navigate("/log-in");
     } catch (error) {
       console.log(error);
       toast.error("Logout Failed");
