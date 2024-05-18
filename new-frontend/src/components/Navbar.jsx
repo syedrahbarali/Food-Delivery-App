@@ -14,13 +14,16 @@ function Navbar() {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("http://localhost:3000/api/v1/user/logout", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({}),
-      });
+      const response = await fetch(
+        "https://voting-app-vrbt.onrender.com/api/v1/user/logout",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({}),
+        }
+      );
       console.log(response);
 
       if (response.status === 200) {
