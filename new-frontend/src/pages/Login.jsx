@@ -15,16 +15,19 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:3000/api/v1/user/login", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        adhaarNumber: adhaarNumber.current.value,
-        password: password.current.value,
-      }),
-    });
+    const response = await fetch(
+      "https://voting-app-vrbt.onrender.com/api/v1/user/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          adhaarNumber: adhaarNumber.current.value,
+          password: password.current.value,
+        }),
+      }
+    );
 
     console.log(await response.json());
 
