@@ -9,7 +9,9 @@ const Navbar = () => {
       <header className="navbar">
         {/*- - - - - Logo  - - - - -*/}
         <div className="navbar__logo">
-          <img src="./assets/logo.png" alt="" />
+          <Link to="/">
+            <img src="./assets/logo.png" alt="" />
+          </Link>
         </div>
 
         {/* - - - - - Menu - - - - - */}
@@ -34,7 +36,7 @@ const Navbar = () => {
         <div className="navbar__utils">
           <RiShoppingCartLine size={24} className="cart" />
           <IoSearchOutline size={24} />
-          <Link className="btn--primary" to="/sign-in">
+          <Link className="btn btn--primary" to="/sign-in">
             Sign in
           </Link>
           {/* <Link to="/sign-up">Sign up</Link> */}
