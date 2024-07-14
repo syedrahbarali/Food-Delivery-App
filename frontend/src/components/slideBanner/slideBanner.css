@@ -20,7 +20,7 @@
 
 @media screen and (max-width: 1024px) {
   .slide-banner__content {
-    width: 67%;
+    max-width: 75%;
   }
   .slide-banner__desc {
     display: none;

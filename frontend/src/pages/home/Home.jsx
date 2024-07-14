@@ -4,9 +4,9 @@ import "./home.css";
 
 const Home = () => {
   return (
-    <div className="home margin-">
+    <div className="home margin-space">
       <SlideBanner />
-      {/* <ExploreMore /> */}
+      <ExploreMore />
     </div>
   );
 };

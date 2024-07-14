@@ -38,6 +38,21 @@ textarea {
 h1 {
   font-size: 3.5rem;
 }
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.875rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1rem;
+}
 
 a,
 p,
@@ -45,7 +60,7 @@ span,
 button,
 input,
 textarea {
-  font-size: 0.875rem;
+  font-size: 0.9rem;
 }
 
 /* - - - - - Basics - - - - - */
@@ -56,7 +71,7 @@ textarea {
   min-height: calc(100vh - 70px);
   height: calc(100vh - 70px);
   margin-inline: auto;
-  margin-top: 70px;
+  margin-top: 85px;
 }
 
 /* - - - - - Button - - - - - */
@@ -116,6 +131,12 @@ textarea {
   h1 {
     font-size: 2rem;
   }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h4 {
+    font-size: 1.25rem;
+  }
 
   a,
   p,
@@ -123,7 +144,7 @@ textarea {
   button,
   input,
   textarea {
-    font-size: 0.8rem;
+    font-size: 0.725rem;
   }
 }
 
@@ -135,7 +156,8 @@ textarea {
   .container {
     width: 90%;
   }
+
   h1 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
