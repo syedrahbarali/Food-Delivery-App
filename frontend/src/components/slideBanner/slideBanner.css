@@ -10,15 +10,8 @@
 }
 
 .slide-banner__content {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  width: 50%;
+  max-width: 60%;
   margin-left: 6vw;
-}
-
-.slide-banner__title {
-  font-size: max(3.75vw, 1.5rem);
 }
 
 .slide-banner__desc {

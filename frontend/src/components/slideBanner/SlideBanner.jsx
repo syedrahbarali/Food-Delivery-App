@@ -3,7 +3,7 @@ import "./slideBanner.css";
 const SlideBanner = () => {
   return (
     <div className="slide-banner">
-      <div className="slide-banner__content">
+      <div className="slide-banner__content margin-space">
         <h1 className="slide-banner__title">Order your favourite food here</h1>
         <p className="slide-banner__desc">
           Choose from a diverse menu featuring a delectable array of crafted
