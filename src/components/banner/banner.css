@@ -1,0 +1,48 @@
+.banner {
+  width: 100%;
+  aspect-ratio: 5/2.125;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.banner-img {
+  width: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.banner-text {
+  width: 62%;
+  color: white;
+  margin-left: 8%;
+}
+
+.banner-text .btn-small {
+  padding: 0.875em 1.5em;
+  border-radius: 100px;
+}
+
+@media screen and (max-width: 1024px) {
+  h1.banner-heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1.banner-heading {
+    font-size: 2rem;
+  }
+  .banner-text {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h1.banner-heading {
+    font-size: 1.5em;
+  }
+}

@@ -9,7 +9,7 @@ const AuthBtn = ({ handleToggleMenu, toggleMenu }) => {
   return (
     <div className="auth-btn">
       <Link
-        className="btn btn-secondary"
+        className="btn btn-primary"
         to={`${location.pathname === "/sign-in" ? "/sign-up" : "/sign-in"}`}
       >
         {location.pathname === "./sign-in" ? "Sign up" : "Sign in"}
