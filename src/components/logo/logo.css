@@ -1,8 +1,9 @@
 .logo {
-  width: fit-content;
-  height: 1.75rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .logo img {
-  height: 100%;
+  width: clamp(75%, 75%, 100%);
 }

@@ -2,10 +2,10 @@ import "./banner.css";
 
 const Banner = () => {
   return (
-    <div className="banner">
+    <div className="banner space-parent">
       <img className="banner-img" src="./assets/header_img.png" alt="" />
 
-      <div className="banner-text margin-space">
+      <div className="banner-text space-children">
         <h1 className="banner-heading">
           Order your <br /> favourite food here.
         </h1>

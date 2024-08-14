@@ -1,0 +1,19 @@
+.explore-menu .desc {
+  width: 75%;
+}
+
+.menu-item {
+  width: fit-content;
+  text-align: center;
+  cursor: pointer;
+}
+
+.menu-img {
+  width: min(20vw, 100px);
+}
+
+@media screen and (max-width: 768px) {
+  .explore-menu .desc {
+    width: 100%;
+  }
+}

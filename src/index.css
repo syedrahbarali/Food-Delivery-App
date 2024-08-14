@@ -6,7 +6,8 @@
   height: 100vh;
   padding-top: var(--header-height);
   overflow-x: hidden;
-  padding-inline: 1.5rem;
+  position: relative;
+  /* padding-inline: 1.5rem; */
 }
 
 * {
