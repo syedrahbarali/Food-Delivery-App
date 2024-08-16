@@ -57,16 +57,19 @@
 
 /* ========== Typography ========== */
 .desc {
+  /* for tags (<p>, <a>) */
   font-size: var(--font-small);
   font-weight: 500;
 }
 
 .title {
+  /* for tags (h3, h4) */
   font-size: 1.5rem;
   font-weight: 600;
 }
 
 .sub-heading {
+  /* for small heading like (Item name )  */
   font-size: 1rem;
   font-weight: 600;
 }
